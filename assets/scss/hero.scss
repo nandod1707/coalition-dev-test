@@ -1,0 +1,46 @@
+.section-hero {
+    position: relative;
+    background-image: url("./img/hero-bg.jpg");
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: top;
+    overflow: hidden;
+}
+
+.hero--content {
+    padding: 15vw 0 12.8vw;
+    img {
+        width: 120%;
+        max-width: 120%;
+        position: absolute;
+        bottom: 0;
+        left: -15%;
+        right: 0;
+    
+    }
+    .hero--text {
+        padding-bottom: 6.5vw;
+        font-family: Bebas;
+        font-size: 7vw;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.80;
+        letter-spacing: 1.13px;
+        color: #4d4d4d;
+        transition: all 0.1s ease;
+    }
+    .hero--text-content:nth-child(2) {
+        font-size: 7.55vw;
+        color: #414f6b;
+    }
+    @media (max-width: 576px) {
+        padding: 24vw 0 18vw;
+        .hero--text {
+            font-size: 12vw;
+        }
+        .hero--text-content:nth-child(2) {
+            font-size: 13vw;
+        }
+    }
+}

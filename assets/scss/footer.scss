@@ -1,0 +1,29 @@
+footer {
+    padding: 16px 0;
+    background-color: #414f6b;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        img {
+            mix-blend-mode: soft-light;
+        }
+        .logo--text-content {
+            opacity: 1;
+            color: #63769d;
+        }
+    }
+}
+
+.footer-copyright {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.67;
+    letter-spacing: 1.2px;
+    color: #63769d;
+}

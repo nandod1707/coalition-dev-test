@@ -1,0 +1,52 @@
+.accesible {
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.body-content {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.body-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    @media (min-width: 942px) {
+        max-width: 910px;
+        margin: 0 auto;
+    }
+}
+
+.accordions .accordion .accordion-header {
+    border-radius: 0;
+    background-color: #414f6b;
+    p {
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.accordions .accordion {
+    background-color: rgba(255,255,255,0.7);
+}
+
+.accordions .accordion .accordion-header+.accordion-body {
+    border-radius: 0;
+}

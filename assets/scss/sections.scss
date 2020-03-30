@@ -1,0 +1,189 @@
+.section-history {
+    background-image: url("./img/peak.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 3.55vw;
+}
+
+.section-history--text-content {
+    margin: 0 auto;
+    padding-bottom: 28.56vw;
+    .body-content {
+        padding-left: 78px;
+    }
+    @media (max-width: 576px) {
+        .body-content {
+            padding-left: 0;
+        }
+    }
+}
+
+.section-header {
+    display: flex;
+    align-items: flex-end;
+    .section-number {
+        position: relative;
+        opacity: 0.5;
+        font-family: Oswald;
+        font-size: 132.5px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: rgba(65, 79, 107, 0.5);
+        span {
+            position: absolute;
+            bottom: 0;
+            right: -27px;
+        }
+    }
+    .section-title--title {
+        text-transform: uppercase;
+        font-family: Oswald;
+        font-size: 31.5px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #414f6b;
+        padding-bottom: 28px;
+    }
+}
+
+.section-team {
+    .section-team--title-section {
+        padding: 30px 0 26px;
+        display: flex;
+        align-items: center;
+        .body-content {
+            padding-left: 31px;
+        }
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.section-team--menu {
+    background-color: #414f6b;
+    .body-container {
+        margin: 0 auto;
+    }
+    @media (max-width: 576px) {
+        display: none!important;
+    }
+}
+
+.section-team--menu-items {
+    display: flex;
+}
+
+.section-team--menu-item {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    a {
+        position: relative;
+        color: #b0b4be;
+        transition: all 0.3s ease;
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: #414f6b;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: -4px;
+            transition: all 0.3s ease;
+        }
+    }
+    &.active,
+    &:hover {
+        background-color: #b0b4be;
+        a {
+            color: #414f6b;
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.section-team--content {
+    background-image: url("./img/mountains-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 6.3vw;
+    padding-bottom: 13.5vw;
+}
+
+.section-team--content-schedule {
+    display: none;
+    // display: inline-block;
+    background-color: rgba(255,255,255,0.7);
+    padding: 24px 41px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-100%);
+    &.active {
+        display: inline-block;
+    }
+    &.fade-out {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    &.fade-in {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    @media (max-width: 576px) {
+        display: none!important;
+    }
+}
+
+.schedule--title {
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 31.5px;
+    font-weight: bold;
+    color: #414f6b;
+    padding-bottom: 19px;
+}
+
+.schedule--month {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #000000;
+    padding-bottom: 24px;
+    &:last-child {
+        padding-bottom: 0;
+    }
+    table {
+        min-width: 270px;
+        td:last-child {
+            text-align: right;
+        }
+    }
+}
+
+.section-team--accordion {
+    display: none;
+    @media (max-width: 576px) {
+        display: block;
+    }
+    table {
+        width: 100%;
+        td:last-child {
+            text-align: right;
+        }
+    }
+}
